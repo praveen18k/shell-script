@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo " hello world, i am learning DevOps with AWS"
+echo " Adding another line"
