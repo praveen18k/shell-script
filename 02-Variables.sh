@@ -2,4 +2,4 @@
 
 DATE=(date)
 
-echo " Script execucuted at: $DATE
+echo " Script execucuted at:$DATE
