@@ -8,5 +8,13 @@ then
     echo " ERROR: Please Run this script with root user"
     exit 1
 fi
+#it is our responsibility again to check installation is success or not
+yum install mysqllll -y
 
-yum install mysql -y
+if [ $ -ne 0 ]
+then 
+    echo "Installation of mysql is error"
+    exit 1
+else   
+    echo "Installation og mysql is success"
+fi
