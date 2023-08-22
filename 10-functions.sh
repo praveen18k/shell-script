@@ -7,7 +7,7 @@ SCRIPT_NAME=$0
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 
 R="\e[31m"
-G="\e[32m]"
+G="\e[32m"
 N="\e[0m"
 
 #Function name is VALIDATE & this validate the previous command and inform user it is success or failure
@@ -15,10 +15,10 @@ VALIDATE(){
     #$1 --> it will receive the argument 1
     if [ $1 -ne 0 ]
     then
-        echo "$2...$R FAILURE"
+        echo -e "$2...$R FAILURE"
         exit 1
     else 
-        echo "$2...$G SUCCESS"
+        echo -e "$2...$G SUCCESS"
     fi  
 }
 
