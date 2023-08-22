@@ -24,7 +24,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo "$R ERROR: Please Run this script with root user"
+    echo -e "$2 ERROR: Please Run this script with root user"
     exit 1
 fi
 
