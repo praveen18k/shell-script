@@ -13,10 +13,10 @@ VALIDATE(){
     #$1 --> it will receive the argument 1
     if [ $1 -ne 0 ]
     then
-        echo -e "$2...$R FAILURE"
+        echo -e "$2...$R FAILURE $N"
         exit 1
     else 
-        echo -e "$2...$G SUCCESS"
+        echo -e "$2...$G SUCCESS $N"
     fi  
 }
 
@@ -24,7 +24,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo " ERROR: Please Run this script with root user"
+    echo "$R ERROR: Please Run this script with root user $N"
     exit 1
 fi
 
