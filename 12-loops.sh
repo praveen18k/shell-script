@@ -34,7 +34,7 @@ do
 yum install $i -y
 done
 
-VALIDATE $? "Installing Git" &>>$LOGFILE
+VALIDATE $? "Package installation" &>>$LOGFILE
 
 
 
