@@ -33,8 +33,9 @@ for i in $@
 do
 yum install $i -y
 done
+VALIDATE $? "Package installation" >> $LOGFILE 2>&1
 
-VALIDATE $? "Package installation" &>>$LOGFILE
+#VALIDATE $? "Package installation" &>>$LOGFILE
 
 
 
