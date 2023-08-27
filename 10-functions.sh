@@ -16,10 +16,10 @@ VALIDATE(){
     #$1 --> it will receive the argument 1
     if [ $1 -ne 0 ]
     then
-        echo -e "$2...$R FAILURE"
+        echo -e "$2...$R FAILURE $N"
         exit 1
     else 
-        echo -e "$2...$G SUCCESS"
+        echo -e "$2...$G SUCCESS $N"
     fi  
 }
 
@@ -35,7 +35,7 @@ yum install git -y &>>$LOGFILE
 
 VALIDATE $? "Installing Git"
 
-yum install mysql -y &>>$LOGFILE
+yum install mysqll -y &>>$LOGFILE
 
 VALIDATE $? "Installing MySQL"
 
