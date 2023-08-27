@@ -30,7 +30,7 @@ do
     if [$usage -gt $DISK_USAGE_THRESHOLD ];
     then
         # + means this will add new message to existing message
-        message+="HIGH DISK USAGE on $partition: $usage \n"
+        message+="HIGH DISK USAGE on $partition: $usage\n"
     fi
 done <<< $DISK_USAGE
 
@@ -38,5 +38,8 @@ echo -e "message: $message"
 
 #echo "$message" | mail -s "High Disc Usage" praveenkothapally18@gmail.com
 
+#Interview Q: How to call other shell script from your current script
+#Answer: type sh and script name 
+
 #        "my email"                   "Subject"           "Body"    "Team Name"     "Alert Type"
-mail.sh praveenkothapally18@gmail.com "High Disc Usage" "$message" "DevOps Team" "High Disch Usage"
+ sh mail.sh praveenkothapally18@gmail.com "High Disc Usage" "$message" "DevOps Team" "High Disch Usage"
