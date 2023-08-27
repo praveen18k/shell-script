@@ -27,7 +27,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo "$Y ERROR: Please Run this script with root user"
+    echo -e "$Y ERROR: Please Run this script with root user"
     exit 1
 fi
 #it is our responsibility again to check installation is success or not
