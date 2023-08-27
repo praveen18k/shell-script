@@ -9,7 +9,7 @@ LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-#Y="\e[33"
+Y="\e[33"
 
 #Function name is VALIDATE & this validate the previous command and inform user it is success or failure
 VALIDATE(){
@@ -27,7 +27,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo -e "ERROR: Please Run this script with root user"
+    echo -e "$Y ERROR: Please Run this script with root user $N"
     exit 1
 fi
 #it is our responsibility again to check installation is success or not
