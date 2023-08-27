@@ -9,7 +9,7 @@ LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-Y="\e[33"
+Y="\e[33m"
 
 #Function name is VALIDATE & this validate the previous command and inform user it is success or failure
 VALIDATE(){
