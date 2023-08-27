@@ -31,7 +31,7 @@ then
     exit 1
 fi
 #it is our responsibility again to check installation is success or not
-yum install git -y &>>$LOGFILE
+yum install gittt -y &>>$LOGFILE
 
 VALIDATE $? "Installing Git"
 
