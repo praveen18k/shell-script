@@ -9,4 +9,4 @@ then
 else
     echo "$X is not greater than 10"
 fi 
-
+ 
