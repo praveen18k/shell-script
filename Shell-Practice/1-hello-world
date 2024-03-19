@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo " Hi This is Praveen"
+Person1=Praveen
+Person2=Naveen
+
+echo "$Person1: Hi"
+echo "$Person2: Hello"
+echo "$Person1: How are you"
+echo "$Person2: I am good, How are you"
